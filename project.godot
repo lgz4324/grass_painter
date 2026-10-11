@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Grass Painter"
+config/description="Paintable GPU grass for Godot 4 - demo project for the Grass Painter addon."
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://addons/grass_painter/icon.png"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/grass_painter/plugin.cfg")
+
+[shader_globals]
+
+grass_player_pos={
+"type": 9,
+"value": Vector3(0, 0, 0)
+}

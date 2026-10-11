@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="GrassPreset" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/grass_painter/core/grass_preset.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+preset_name = "Procedural Default"
+is_procedural = true
+lod0_assets = []
+lod1_assets = []
+personalities = [{"blades": Vector2i(8, 9), "spread": 0.85, "width": 0.9}, {"blades": Vector2i(10, 11), "spread": 1.0, "width": 1.0}, {"blades": Vector2i(12, 13), "spread": 1.15, "width": 1.1}, {"blades": Vector2i(7, 9), "spread": 0.7, "width": 0.75}]
+shader_kind = 0
+lod_switch_distance = 22.0
+default_density = 10.0
+default_height_min = 0.12
+default_height_max = 0.2
+avg_natural_ratio = 1.0

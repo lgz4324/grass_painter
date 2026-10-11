@@ -1,0 +1,9 @@
+# Normalize line endings for all text files.
+* text=auto eol=lf
+
+# Binary assets: no line-ending conversion.
+*.png binary
+*.jpg binary
+*.webp binary
+*.glb binary
+*.ttf binary
