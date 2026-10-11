@@ -7,6 +7,30 @@ regions across your terrain, batch-fill them, carve exclusion circles, and defin
 number of grass kinds via presets — zero-asset procedural blades out of the box, or
 your own scanned/custom meshes.
 
+## Highlights
+
+- **Paint in the viewport** — click to place a grass region, Shift+drag to batch-fill a
+  whole rectangle with a non-overlapping grid, Ctrl+click / Ctrl+Shift+drag to erase.
+  One undo step per gesture.
+- **Exclusion pen** — paint "no grass here" circles inside regions for paths, stones
+  and puddles; erase them the same way.
+- **Any grass kind via presets** — a zero-asset procedural blade generator out of the
+  box, or your own meshes/textures through a `GrassPreset` resource (near LOD + far
+  card LOD, per-kind density/height defaults, height-preserving conversion between
+  presets).
+- **Ground-agnostic** — snaps grass to physics colliders, and can also fall back to
+  *visible meshes* for collider-free visual ground (four surface-source modes).
+- **Editor-fast** — frame-sliced batch placement/rebuild with Esc-abort, clustered
+  index sharing between neighbouring regions, full undo/redo integration.
+- **Runtime-ready** — strip baked data to shrink scenes and rebuild on game start;
+  grass bends away from the player through one global shader parameter.
+
+## Requirements
+
+- Godot 4.4 or newer (tested on 4.6, Forward+; Mobile/Compatibility renderers are
+  untested).
+- No dependencies, no bundled third-party assets.
+
 ## Install
 
 1. Download this repository and copy the `addons/grass_painter/` folder into your
