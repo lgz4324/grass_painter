@@ -9,9 +9,13 @@ your own scanned/custom meshes.
 
 ## Install
 
-1. Copy the `addons/grass_painter/` folder into your project's `addons/` directory.
+1. Download this repository and copy the `addons/grass_painter/` folder into your
+   project's `addons/` directory (or install via the Godot Asset Library).
 2. Enable **Grass Painter** in Project > Project Settings > Plugins.
 3. The **Grass Painter** tab appears in the editor's right dock.
+4. Optional: open this repository as a Godot project and run `demo/demo.tscn` to see
+   a live demo (procedural grass on a bare box ground, a sphere walking around and
+   bending the grass).
 
 The plugin is fully self-contained: every script, shader and default asset lives in
 this folder. No paths outside the addon are required.
